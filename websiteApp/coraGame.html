@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Girls Night!</title>
+        
+        <script src="answers.js"></script>
+        <script src="objectQuestions.js"></script> 
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="questions">
+            <p id="labelStart">Welcome to the Core Game! Click the button to get the question!</p>
+             <p id="pQ"></p>
+             
+        </div>
+        <div class="container">
+            <button id="bQ" onclick="getObjectQuestion()">PLAY</button>
+        </div>
+        <div id="answers">
+            <br>
+            <br>
+            <p id="result"><strong></strong></p>
+            <br>
+            <br>
+            <ul id="answerList">
+                <button id="0" onclick="answers(this.id)">A</button>
+                <button id="1" onclick="answers(this.id)">B</button>
+                <button id="2" onclick="answers(this.id)">C</button>
+                <button id="3" onclick="answers(this.id)">D</button>
+            </ul>
+        </div>
+        <div id="'score">
+            <br>
+            <br>
+            <h1 id="scoreH">0</h1>
+        </div>
+    </body>
+</html>

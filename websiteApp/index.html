@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Input Calculator</title>
+<script>
+function calculate(){
+    var input = document.getElementById("inputValue").value;
+    var result = input * 1.18;
+    document.getElementById("resultValue").innerHTML = "The result is " + result;
+
+    document.cookie ="user=LOGGED";
+}
+</script>
+</head>
+<body>
+
+Enter a number: 
+<input id="inputValue" type="text" />
+<button onclick="calculate()">Calculate</button>
+<p id="resultValue"></p>
+
+</body>
+</html>
