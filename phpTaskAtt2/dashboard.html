@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboardStyles.css">
+  </head>
+  <script>
+    let x = document.cookie;
+    if(x.includes('admin')){
+      alert('Welcome!')
+    }else{
+      location.href = 'http://localhost/phpTaskAtt2/index.html';
+    }
+  </script>
+  <body>
+    <div id="dashboard">
+      <h1>Dashboard</h1>
+      <ul class="nav">
+        <li><a href="http://localhost/phpTaskAtt2/index.html">Index</a></li>
+        <li><a href="logout_process.php">Logout</a></li>
+      </ul>
+      <div class="data">
+        <h2>Sales</h2>
+        <ul>
+          <li>Today <span>$1,250</span></li>
+          <li>This Week <span>$5,250</span></li>
+          <li>This Month <span>$10,500</span></li>
+        </ul>
+      </div>
+      <div class="data">
+        <h2>Expenses</h2>
+        <ul>
+          <li>Today <span>$500</span></li>
+          <li>This Week <span>$2,000</span></li>
+          <li>This Month <span>$4,500</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

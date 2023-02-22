@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+    <link rel="stylesheet" href="indexStyles.css">
+	
+</head>
+
+<body>
+	<h1>Welcome! Please Log In</h1>
+	<form action="login_process.php" method="post">
+		<label>Username: </label>
+		<input type="text" name="username" placeholder="Username" required>
+		<br>
+		<br>
+		<label>Password: </label>
+		<input type="password" name="password" placeholder="Password" required>
+		<br>
+		<br>
+		<input type="submit" value = "Login" name = "submit">
+	</form>
+	<div id="user"></div>
+</body>
+<script>
+	let log = document.cookie;
+	if(log.includes('DENIED')){
+		alert('Credentials are not correct.')
+		document.cookie = "USER= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+	}
+</script>
+</html>
